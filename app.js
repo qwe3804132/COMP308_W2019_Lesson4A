@@ -5,6 +5,12 @@
 //npm install @types/node @types/express @types/cookie-parser @types/body-parser --save-dev
 //npm install @types/morgan --save-dev
 
+//git init
+//git add .
+//git commit -m "first commit"
+
+
+//npm i bootstrap jquery popper.js font-awesome --save
 
 
 let createError = require('http-errors');
@@ -27,6 +33,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules'))); //add reference,but it is not good for github
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

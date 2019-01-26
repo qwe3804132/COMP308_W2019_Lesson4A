@@ -1,8 +1,11 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+//go to route first, I want index.ejs + parameter,then going to generate a page.
+
+
+router.get('/', (req, res, next) =>{
   res.render('index', { title: 'Express' });
 });
 
