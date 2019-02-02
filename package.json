@@ -1,5 +1,5 @@
 {
-  "name": "comp308w2019-lesson3a",
+  "name": "comp308w2019-lesson4a",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -19,7 +19,7 @@
     "npm": "^6.7.0",
     "popper.js": "^1.14.6"
   },
-  "description": "Express Generator Demo",
+  "description": "MangoDB",
   "main": "server.js",
   "author": "Peiran Liu",
   "license": "ISC",

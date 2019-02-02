@@ -8,10 +8,14 @@
 //git init
 //git add .
 //git commit -m "first commit"
-
-
 //npm i bootstrap jquery popper.js font-awesome --save
 
+
+//mongod
+//mongo
+
+
+//git remote rm origin 如果要把当前已经有索引的文件，到新的github repoisitiry.删除原来的remote控制
 
 let createError = require('http-errors');
 let express = require('express');
