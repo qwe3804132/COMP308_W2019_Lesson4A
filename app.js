@@ -39,6 +39,7 @@ mongoDB.once('open',()=>{
 
 //route setup
 let indexRouter = require('./routes/index');
+let contactRouter=require('./routes/contact');
 
 let app = express();
 
@@ -55,6 +56,7 @@ app.use(express.static(path.join(__dirname, 'node_modules'))); //add reference,b
 
 
 app.use('/', indexRouter);
+app.use('/contact-list',ontactRouter);
 //app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
